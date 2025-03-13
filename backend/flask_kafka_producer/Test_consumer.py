@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 
-TOPIC_NAME = "transaction-stream"
+TOPIC_NAME = "processed-transactions"
 KAFKA_BROKER = "localhost:9092"
 
 consumer = KafkaConsumer(
