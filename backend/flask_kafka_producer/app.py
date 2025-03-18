@@ -48,7 +48,7 @@ def upload_csv():
         producer.send(TOPIC_NAME, key=bytes(row[2], 'utf-8'), value=transaction_data)
 
     producer.flush()  # Ensure all messages are sent
-    return jsonify({"message": "Transactions sent to Kafka", "data": transactions}), 200
+    return jsonify({"message": "Transactions uploaded successfully"}), 200
 
 
 if __name__ == '__main__':
