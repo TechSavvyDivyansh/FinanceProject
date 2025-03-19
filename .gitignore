@@ -1,3 +1,5 @@
 venv
 .env
 .astro
+logs
+__pycache__
