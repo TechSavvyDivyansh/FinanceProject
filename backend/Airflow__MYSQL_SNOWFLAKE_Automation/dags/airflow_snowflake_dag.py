@@ -19,7 +19,7 @@ WAREHOUSE_NAME = "FINANCEWAREHOUSE"
 with DAG(
     dag_id="mysql_to_snowflake_etl",
     start_date=days_ago(1),
-    schedule_interval="25 15 * * *",  # ⏰ 9:00 PM daily in ist but uts-> 15:25 
+    schedule_interval="25 14 * * *",  # ⏰ 9:00 PM daily in ist but uts-> 15:25 
     catchup=False,
     tags=["etl", "mysql", "snowflake"]
 ) as dag:
